@@ -67,11 +67,11 @@ Once Git is installed, you can clone the repository to access the materials.
    ```
 3. Clone the repository:
    ```sh
-   git clone [repository-url]
+   git clone https://github.com/Andrew-Girgis/UWES-R-Tutorial.git
    ```
 4. Navigate into the cloned repository:
    ```sh
-   cd repository-name
+   cd UWES-R-Tutorial
    ```
 
 Now, you're ready to follow along with the workshop!
