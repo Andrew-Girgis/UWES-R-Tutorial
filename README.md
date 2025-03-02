@@ -26,8 +26,57 @@ To participate effectively, please install R and RStudio before the workshop:
 - **Download R:** [https://cran.r-project.org/](https://cran.r-project.org/)
 - **Download RStudio:** [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
 
-## Getting Started
-We will provide workshop materials, including example datasets and scripts, during the sessions.
+## Setting Up Git and Cloning the Repository
+### **Step 1: Install Git**
+Git is required to clone the workshop repository. Follow the instructions below based on your operating system:
+
+#### **Windows:**
+1. Download Git for Windows from [https://git-scm.com/downloads](https://git-scm.com/downloads).
+2. Run the installer and follow the default setup.
+3. Once installed, open **Git Bash** to use Git commands.
+
+#### **MacOS:**
+1. Open **Terminal**.
+2. Install Git using Homebrew (if not installed, first install Homebrew from [https://brew.sh](https://brew.sh)):
+   ```sh
+   brew install git
+   ```
+3. Verify installation:
+   ```sh
+   git --version
+   ```
+
+#### **Linux (Ubuntu/Debian):**
+1. Open **Terminal**.
+2. Run the following command:
+   ```sh
+   sudo apt update && sudo apt install git -y
+   ```
+3. Verify installation:
+   ```sh
+   git --version
+   ```
+
+### **Step 2: Clone the Workshop Repository**
+Once Git is installed, you can clone the repository to access the materials.
+
+1. Open your terminal (or Git Bash on Windows).
+2. Navigate to the directory where you want to save the workshop materials:
+   ```sh
+   cd path/to/your/directory
+   ```
+3. Clone the repository:
+   ```sh
+   git clone [repository-url]
+   ```
+4. Navigate into the cloned repository:
+   ```sh
+   cd repository-name
+   ```
+
+Now, you're ready to follow along with the workshop!
 
 ## Contact
-For any questions, feel free to reach out to me, Andrew Girgis, at a4girgis@uwaterloo.ca
+For any questions, feel free to reach out to the UW Economics Society or email [your email/contact info].
+
+We look forward to seeing you at the workshop!
