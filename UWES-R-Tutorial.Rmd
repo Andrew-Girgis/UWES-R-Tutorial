@@ -1,0 +1,110 @@
+---
+title: "UWES R Tutorial"
+author: "Andrew Girgis"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+- Introduction to R
+- loading and viewing data
+- Data manipulation
+
+## Download R and RStudio
+
+R is the programming language and RStudio is an integrated development environment (IDE) for R. You need to install both before you are ready to start programming.
+
+- **Download R:** [https://cran.r-project.org/](https://cran.r-project.org/)
+- **Download RStudio:** [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+
+## Getting started with R
+
+R and RStudio are free and open source software environment for statistical computing and graphics. It compiles and runs on a wide variety of platforms, including Windows and MacOS.
+
+## RStudio IDE
+
+RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
+
+## Why use R?
+
+- R’s role in data science and economic research.
+- Comparison with other tools like Excel, Python, and Stata.
+- Real-world examples of economists and analysts using R.
+
+
+## R Basics - Syntax & Data Types
+
+- Variables and assignment 
+```{r, echo=TRUE}
+x <- 10
+```
+- Data types: Numeric, Character, Logical, Factor
+```{r, echo=TRUE}
+class(x)
+```
+- Printing values
+```{r, echo=TRUE}
+print(x)
+```
+- Comments in R 
+```{r, echo=TRUE}
+# This is a comment
+```
+
+## R Basics - Syntax & Data Types
+
+- Arithmetic operations
+```{r, echo=TRUE}
+y <- 20
+z <- x + y
+print(z)
+```
+
+## Data Structures in R
+
+- Vectors (c(1, 2, 3))
+```{r}
+v <- c(1, 2, 3)
+```
+
+- Matrices (matrix(1:9, nrow = 3))
+```{r}
+m <- matrix(1:9, nrow = 3)
+```
+
+- Data frames (data.frame(name=c("A", "B"), age=c(21, 25)))
+```{r}
+df <- data.frame(name=c("A", "B"), age=c(21, 25))
+```
+
+- Lists (list(name="John", age=30, salary=4000))
+```{r}
+l <- list(name="John", age=30, salary=4000)
+```
+
+
+## Importing & Manipulating Data
+
+- Loading built-in datasets (data(mtcars))
+```{r}
+data(mtcars)
+```
+- Reading CSV files (read.csv("data.csv"))
+- Subsetting data (df[1:10,])
+- Filtering with logical conditions (subset(df, age > 25))
+
+## Basic Data Analysis in R
+
+- Summary statistics (summary(mtcars))
+- Calculating mean, median, standard deviation (mean(mtcars$mpg))
+- Simple plotting (hist(mtcars$mpg))
+
+## Hands-on Exercise
+Activity:
+Provide a small dataset for participants to load into R.
+Have them calculate basic statistics (mean, median, standard deviation).
+Challenge: Plot a histogram or scatterplot.
