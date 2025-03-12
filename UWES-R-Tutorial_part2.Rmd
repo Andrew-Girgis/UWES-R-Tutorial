@@ -1,0 +1,608 @@
+---
+title: 'UWES R Workshop: Econometrics in R'
+short-title: "R Workshop"
+author: "Andrew Girgis"
+date: 'March 12, 2025'
+short-date: '03/12/2025'
+institute: "University of Waterloo"
+short-institute: "UW"
+department: "Department of Economics"
+output: 
+  beamer_presentation:
+    theme: "AnnArbor"
+    colortheme: "crane"
+    fonttheme: "professionalfonts"
+bibliography: references.bib  
+header-includes:
+  - \setbeameroption{show notes} 
+---
+
+```{r setup, include=FALSE}
+library(formatR)
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE, tidy.opts=list(width.cutoff=45), tidy=TRUE)
+```
+
+## Discord
+
+![Discord QR Code](Discord_qrcode.png){width=50%}
+
+## Overview
+
+By the end of today's Presentation you will(hopefully) have a better understanding of:
+ 
+- The Data Journey
+- Data Visualization
+- Regression
+- Economic Insights
+
+## The Data Journey 
+
+![The Data Journey^[[@Government-of-Canada_2021]]](data-literacy-journey-eng.png)
+
+## Step 1: **Define** - Find - Gather
+
+For today's presentation we will be studying what features can affect a students final grade. First we define our problem. 
+
+**Objective:** To derive what impact important features has on a students final grade.
+
+## Step 1: Define - **Find** - Gather
+
+- Now that we have defined our problem the next step in the data journey is to **find and gather** our data. For this I will be using a free dataset from the UC Irvine machine learning repository^[UC Irvine Machine Learning Repository: [archive.ics.uci.edu/datasets](https://archive.ics.uci.edu/datasets)]. 
+- The dataset I will be using is the Student Performance dataset that can be found at [archive.ics.uci.edu/dataset/320/student+performance.](https://archive.ics.uci.edu/dataset/320/student+performance)
+- Other sources for free data:
+  + [Kaggle](https://www.kaggle.com/datasets)
+  + [Statistics Canada](https://www150.statcan.gc.ca/n1/en/type/data)
+  + [US Federal Government Data](https://catalog.data.gov/dataset)
+  + [FRED Economic Data](https://fred.stlouisfed.org/)
+
+## Step 1: Define - Find - **Gather**
+
+**Import libraries**
+
+Libraries (also known as packages) in R are collections of functions, data sets, and other code that extend the functionality of the base R language. They can be downloaded and installed onto your machine using the install.packages() function, then loaded into your R session using the library() function.
+
+```{r, echo=TRUE, message=FALSE}
+#install.packages("readr")
+library(readr)
+library(plyr)
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(GGally)
+library(stargazer)
+```
+
+\note{
+readr: for reading files
+}
+
+## Step 1: Define - Find - **Gather**
+
+**Import data**
+
+To import data we use the function read_csv() from the readr library.
+
+```{r, message=FALSE, echo=TRUE, tidy=FALSE}
+#data_path = '[insert your path here]'
+#student_df = read_csv(data_path)
+```
+
+```{r, message=FALSE, echo=FALSE, tidy=TRUE}
+data_path = '/Users/andrew/Downloads/student+performance/student/student-mat.csv'
+student_df = read_csv(data_path)
+```
+
+
+## Step 2: **Explore** - Clean - Describe
+
+- We use the head() function to view the first 6 lines of our data. 
+- Ensure the data was imported properly.
+- Ensure the variables and values make sense.
+
+```{r, echo = TRUE}
+head(student_df[1:7])
+```
+
+## Step 2: **Explore** - Clean - Describe
+
+- After viewing the data we must understand the data.
+- Some variables may be hard to interpret.
+- See [this link](https://archive.ics.uci.edu/dataset/320/student+performance) for full description of data.
+- After viewing the descriptions of all the  feature variables^[Feature Variables: Variables that will be used as the independents for the regression (predictors for the target variable).] I have choosen to focus on the following variables: absences, higher, activities, studytime, schoolsup, reason, address, sex, age, Pstatus
+- For simplicity we will be using the target variable ^[Target Variable: Variable that will be used as our dependent in the regression.] G3 for this regression.
+
+## Step 2: **Explore** - Clean - Describe
+
+- Summary() is an incredibly useful function!
+- Changes its output based on the input. If you input a list(column) the summary function will output basic summary stats. If you input an object(regression) the summary function will output important regression results/statistics.
+
+```{r}
+summary(student_df['age'])
+#Can use 'age' or column number
+```
+
+
+## Step 2: **Explore** - Clean - Describe
+
+- Table is a great way to get an overview of non-numeric variables.
+- Provides a count of the unique values in the dataset.
+
+```{r}
+table(student_df[2])
+```
+
+
+## Step 2: **Explore** - Clean - Describe
+
+```{r}
+table(student_df['Mjob'])
+```
+
+Although we wont be using Mjob as a variable in our regression, I would like to show what the table function outputs with a non-binary categorical variable.
+
+## Step 2: Explore - **Clean** - Describe
+
+- From the UC Irvine Machine Learning Repository we see that this dataset contains no missing values. However we can confirm that this is true.
+- Depending where you gather your data you may not know whether there are missing values so it is considered good practice to always **inspect and clean** your data.
+
+```{r}
+# Check for NA values in the entire data frame
+sum(is.na(student_df))
+
+# Check for NA values in specific columns (e.g., age column)
+sum(is.na(student_df$age))
+```
+
+
+## Step 2: Explore - **Clean** - Describe
+
+- As an example I will input a NA value in the data.
+
+```{r}
+student_df[124, 23] <- NA
+```
+## Step 2: Explore - **Clean** - Describe
+
+```{r}
+# Check for NA values in the entire data frame
+any(is.na(student_df))
+
+# Find row and column indices with NA values
+na_locations <- which(is.na(student_df), arr.ind = TRUE)
+na_locations
+```
+
+
+```{r, include=FALSE}
+# Check for NA values in each column
+na_counts <- colSums(is.na(student_df))
+
+# Find columns with NA values
+cols_with_na <- names(na_counts[na_counts > 0])
+cols_with_na
+
+# Find row indices with NA values
+rows_with_na <- which(!complete.cases(student_df))
+rows_with_na
+```
+
+## Step 2: Explore - **Clean** - Describe
+
+- Finally we will filter our data to hone in on the variables we want to focus on.
+
+```{r}
+filtered_df <- student_df %>%
+  select(absences, higher, activities, studytime, schoolsup, sex, age, G3)
+```
+
+
+
+## Step 3: **Analyze** - Model
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+filtered_df <- filtered_df %>%
+  mutate(sex = factor(sex)) %>%
+  mutate(sex = relevel(sex, ref = 'M'))
+
+ggplot(filtered_df, aes(x = factor(sex), fill = factor(sex))) +
+  geom_bar(stat = "count") +
+  scale_fill_manual(values = c("lightblue", "lightpink"), labels = c("Male", "Female")) +
+  coord_flip() +
+  labs(title = "Horizontal Bar Plot of Sex",
+       x = "Sex",
+       y = "Count")
+
+```
+
+## Step 3: **Analyze** - Model
+
+```{r, echo=FALSE,  fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = age)) +
+  geom_bar(fill = "red", color = "black") +
+  labs(title = "Histogram of Age",
+       x = "Age",
+       y = "Frequency")
+```
+
+## Step 3: **Analyze** - Model
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = factor(higher), fill = factor(higher))) +
+  geom_bar(stat = "count") +
+  scale_fill_manual(values = c("orangered", "palegreen2"), labels = c("No", "Yes")) +
+  coord_flip() +
+  labs(title = "Horizontal Bar Plot of students who want to pursue higher education",
+       x = "Higher Education",
+       y = "Count")
+```
+
+
+## Step 3: **Analyze** - Model
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = sex, y = G3, fill = sex)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("lightblue", "lightpink")) +  # Custom fill colors for the boxes
+  labs(title = "Boxplot of FInal Average by Sex",
+       x = "Sex",
+       y = "G3")
+```
+
+## Step 3: **Analyze** - Model
+
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = higher, y = G3, fill = higher)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("orangered", "palegreen2")) +  # Custom fill colors for the boxes
+  labs(title = "Boxplot of G3 by Higher Education Aspiration",
+       x = "Higher Education Aspiration",
+       y = "G3")
+```
+
+## Step 3: **Analyze** - Model
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = schoolsup, y = G3, fill = schoolsup)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("orangered", "palegreen2")) +  # Custom fill colors for the boxes
+  labs(title = "Boxplot of G3 vs wheter a student is getting extra help",
+       x = "Parental Status",
+       y = "G3")
+```
+- Lower average for students who get extra help?!?
+
+## Step 3: **Analyze** - Model
+
+- Lets look into this
+
+```{r}
+table(filtered_df$schoolsup)
+```
+
+- The lower average can be explained by multiple factors including the smaller sample, the quality in the extra support or the students natural ability. 
+- An interesting analysis to look into (since we have the data) is to see the affect the extra help had on the difference in average from first year in hs to last. 
+
+
+## Step 3: **Analyze** - Model
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = studytime, y = G3)) +
+  geom_point() +
+  labs(title = "Scatter Plot of Study Time vs. Final Grade",
+       x = "Study Time",
+       y = "Final Grade")
+```
+
+Its a bit tough to see whats really going on here. How can we see the real relationship when the points are overlapping?
+
+## Step 3: **Analyze** - Model
+
+Introducing jitter!
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = studytime, y = G3)) +
+  geom_point(position = position_jitter(width = 0.1, height = 0), alpha = 0.5) +
+  labs(title = "Scatter Plot of Study Time vs. Final Grade",
+       x = "Study Time",
+       y = "Final Grade")
+```
+
+## Step 3: **Analyze** - Model
+
+```{r, echo=FALSE, fig.width=6, fig.height=4}
+ggplot(filtered_df, aes(x = G3, y = absences)) +
+  geom_point(position = position_jitter(width = 0.2, height = 0.2), alpha = 0.5) +  # Add jitter with alpha blending
+  labs(title = "Scatter Plot of Final Grade vs. Absences",
+       x = "Final Grade",
+       y = "Absences")
+
+```
+
+
+## Step 3: **Analyze** - Model
+
+```{r, message=FALSE, echo=FALSE, fig.width=6, fig.height=4}
+colors <- c("M" = "lightblue", "F" = "lightpink")
+
+pm <- ggpairs(filtered_df, 
+              columns = c("age", "sex", "studytime", "G3"), 
+              columnLabels = c("Age", "Sex", "Study Time", "Final Score"),
+              lower = list(
+                continuous = "smooth",
+                combo = "facetdensity",
+                mapping = aes(color = sex)
+              )
+)
+pm <- pm + scale_color_manual(values = colors)
+
+pm
+
+```
+
+## Step 3: Analyze - **Model**
+
+- Regression analysis is a way of mathematically identifying which independent variables has an impact on our dependant variable.[@Gallo_2022]
+- It helps us answer the questions:
+  + Which factors(independent variables) matter most? 
+  + Which can we ignore? 
+  + How do those factors interact with one another?
+  + How certain are we about all these factors?
+
+
+
+## Step 3: Analyze - **Model**
+
+*Simple Linear Regression*
+
+**Our True Model:**
+$$ y_i = \beta_0 + \beta_{1}X_{1i} + \epsilon_i $$
+
+$\beta_0$:  True Intercept
+
+$\beta_{1}$: True beta coefficient that quantifies the exact strength and direction of the relationship between each independent variable and the dependent variable.
+
+$\epsilon$: Error term
+
+**Our Estimated Model:**
+$$ \hat{y}_i = \hat{\beta}_0 + \hat{\beta}_{1}X_{1i} $$
+
+$\hat{\beta}_0$: Estimated Intercept
+
+$\hat{\beta}_{1}$: Estimated coefficient that quantifies the strength and direction of the relationship between each independent variable and the dependent variable.
+
+## Step 3: Analyze - **Model**
+
+```{r, echo=FALSE, results='hide'}
+simple_model <- lm(G3 ~ studytime, data = filtered_df)
+
+summary(simple_model)
+
+stargazer(simple_model, type = "latex", title = "Simple Regression Results", header = FALSE, fontsize = "tiny")
+```
+\begin{table}[!htbp] 
+  \centering 
+  \caption{Simple Regression Results - Part 1} 
+  \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lc} 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+   & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+  \cline{2-2} 
+  \\[-1.8ex] & G3 \\ 
+  \hline \\[-1.8ex] 
+   studytime & 0.534$^{*}$ \\ 
+    & (0.274) \\ 
+    & \\ 
+   Constant & 9.328$^{***}$ \\ 
+    & (0.603) \\ 
+    & \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+\end{table} 
+
+## Step 3: Analyze - **Model**
+
+\begin{table}[!htbp] 
+  \centering 
+  \caption{Simple Regression Results - Part 2} 
+  \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lc} 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  R$^{2}$ & 0.010 \\ 
+  Adjusted R$^{2}$ & 0.007 \\ 
+  Residual Std. Error & 4.565 (df = 393) \\ 
+  F Statistic & 3.797$^{*}$ (df = 1; 393) \\ 
+  \hline 
+  \hline \\[-1.8ex] 
+  \textit{Note:} & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{tabular} 
+\end{table} 
+
+
+## Step 3: Analyze - **Model**
+
+Visually
+
+```{r, echo=FALSE, message=FALSE}
+ggplot(filtered_df, aes(x = studytime, y = G3)) +
+  geom_jitter(width = 0.1, height = 0) +  # Add jitter for better visualization
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Scatterplot of Final Grade vs. Study Time",
+       x = "Study Time",
+       y = "Final Grade (G3)")
+```
+
+
+## Step 3: Analyze - **Model**
+
+*Multiple Linear Regression*
+
+**Our True Model:**
+$$ y_i = \beta_0 + \beta_{1}X_{1i} + \beta_{2}X_{2i} + \beta_{3}X_{3i} + \beta_{4}X_{4i} + \beta_{5}X_{5i} + \beta_{6}X_{6i} + \beta_{7}X_{7i} + \epsilon_i $$
+
+$\beta_0$:  True Intercept
+
+$\beta_{1-7}$: True beta coefficient that quantifies the exact strength and direction of the relationship between each independent variable and the dependent variable.
+
+$\epsilon$: Error term
+
+**Our Estimated Model:**
+$$ \hat{y}_i = \hat{\beta}_0 + \hat{\beta}_{1}X_{1i} + \hat{\beta}_{2}X_{2i} + \hat{\beta}_{3}X_{3i} + \hat{\beta}_{4}X_{4i} + \hat{\beta}_{5}X_{5i} + \hat{\beta}_{6i}X_{6i} + \hat{\beta}_{7}X_{7i}$$
+
+$\hat{\beta}_0$: Estimated Intercept
+
+$\hat{\beta}_{1-7}$: Estimated coefficient that quantifies the strength and direction of the relationship between each independent variable and the dependent variable.
+
+## Step 3: Analyze - **Model**
+
+**Interpretation:**
+
+For every one unit increase in $X_{ki}$ our $y$ increases (or decreases, depending on sign) by $\hat{\beta}_{k}$, on average, while holding other variables constant. where k is the independent variable we are interpreting.
+
+
+## Step 3: Analyze - **Model**
+
+```{r, results='hide'}
+filtered_df$sex <- factor(filtered_df$sex, levels = c("M", "F"))
+filtered_df$sex <- as.numeric(filtered_df$sex) - 1
+filtered_df$sex
+# M:0 F:1
+
+# Encode 'higher' variable
+filtered_df$higher <- factor(filtered_df$higher, levels = c("no", "yes"))
+filtered_df$higher <- as.numeric(filtered_df$higher) - 1
+filtered_df$higher
+# 'no': 0, 'yes': 1
+```
+
+```{r, include=FALSE}
+# Encode 'activities' variable
+filtered_df$activities <- factor(filtered_df$activities, levels = c("no", "yes"))
+filtered_df$activities <- as.numeric(filtered_df$activities) - 1
+filtered_df$activities
+# 'no': 0, 'yes': 1
+
+# Encode 'schoolsup' variable
+filtered_df$schoolsup <- factor(filtered_df$schoolsup, levels = c("no", "yes"))
+filtered_df$schoolsup <- as.numeric(filtered_df$schoolsup) - 1
+filtered_df$schoolsup
+# 'no': 0, 'yes': 1
+
+```
+## Step 3: Analyze - **Model**
+
+```{r}
+head(filtered_df[1:6])
+```
+
+
+## Step 3: Analyze - **Model**
+
+```{r, echo=FALSE, results='hide'}
+model <- lm(G3 ~ absences + higher + activities + studytime + schoolsup + sex + age, data = filtered_df)
+
+# Summarize the regression results
+summary(model)
+
+# Assuming 'model' is your regression model object
+stargazer(model, type = "latex", title = "Regression Results", header = FALSE, fontsize = "tiny")
+
+
+```
+\begin{table}[!htbp] 
+  \centering 
+  \caption{Regression Results - Part 1} 
+  \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lc} 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+   & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+  \cline{2-2} 
+  \\[-1.8ex] & G3 \\ 
+  \hline \\[-1.8ex] 
+   absences & 0.054$^{*}$ \\ 
+    & (0.028) \\ 
+    & \\ 
+   higher & 3.393$^{***}$ \\ 
+    & (1.057) \\ 
+    & \\ 
+   activities & $-$0.348 \\ 
+    & (0.452) \\ 
+    & \\ 
+   studytime & 0.712$^{**}$ \\ 
+    & (0.282) \\ 
+    & \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+\end{table} 
+
+## Step 3: Analyze - **Model**
+
+\begin{table}[!htbp] 
+  \centering 
+  \caption{Regression Results - Part 2} 
+  \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lc} 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+   & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+  \cline{2-2} 
+  \\[-1.8ex] & G3 \\ 
+  \hline \\[-1.8ex] 
+   schoolsup & $-$1.622$^{**}$ \\ 
+    & (0.690) \\ 
+    & \\ 
+   sex & $-$1.436$^{***}$ \\ 
+    & (0.479) \\ 
+    & \\ 
+   age & $-$0.621$^{***}$ \\ 
+    & (0.187) \\ 
+    & \\ 
+   Constant & 16.947$^{***}$ \\ 
+    & (3.471) \\ 
+    & \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+\end{table} 
+
+## Step 3: Analyze - **Model**
+
+\begin{table}[!htbp] 
+  \centering 
+  \caption{Regression Results - Part 3} 
+  \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lc} 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+   & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+  \cline{2-2} 
+  \\[-1.8ex] & G3 \\ 
+  \hline \\[-1.8ex] 
+   Observations & 395 \\ 
+   R$^{2}$ & 0.099 \\ 
+   Adjusted R$^{2}$ & 0.083 \\ 
+   Residual Std. Error & 4.388 (df = 387) \\ 
+   F Statistic & 6.078$^{***}$ (df = 7; 387) \\ 
+  \hline 
+  \hline \\[-1.8ex] 
+  \textit{Note:} & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{tabular} 
+\end{table} 
+
+## Step 4: Tell the story
+
+
+![Behold the Dragon Scroll](mastershifu.jpeg){width=70%}
+
+
+
+## References {.allowframebreaks} 
+
+<div id="refs"></div>
+
+
+
+

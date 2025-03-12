@@ -10,6 +10,10 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Discord QR Code
+
+![Discord QR code](Discord_qrcode.png)
+
 ## Download R and RStudio
 
 This will be a hands on workshop so I encourage all participants to download R and RStudio before the workshop and follow along.
@@ -81,6 +85,11 @@ Lets look at components of the RStudio IDE.
 
 ## R Basics - Syntax & Data Types
 
+```{r}
+
+```
+
+
 - Variables and assignment 
 ```{r, echo=TRUE}
 x <- 10
@@ -103,7 +112,7 @@ print(x)
 - Arithmetic operations
 ```{r, echo=TRUE}
 y <- 20
-z <- x + y
+z <- x / y
 print(z)
 ```
 
@@ -114,7 +123,7 @@ x > y
 
 - Logical operators
 ```{r, echo=TRUE}
-x > y | x > y
+x > y | x < y
 ```
 
 ## R Basics - Syntax & Data Types
@@ -162,12 +171,12 @@ l <- list(name="John", age=30, salary=4000)
 
 - Indexing vectors (v[1])
 ```{r}
-v[1]
+v[6]
 ```
 
 - Indexing matrices (m[1, 2])
 ```{r}
-m[1, 2]
+m[2, 2]
 ```
 
 ## Indexing in R
@@ -191,6 +200,7 @@ data(mtcars)
 ```
 - Reading CSV files (read.csv("data.csv"))
 ```{r, warning=FALSE, message=FALSE}
+install.packages("readr")
 library(readr)
 wage_df <- read_csv("wageData.csv")
 ```
@@ -202,10 +212,14 @@ wage_df <- read_csv("wageData.csv")
 head(wage_df)[1:2,]
 ```
 
+## Importing & Manipulating Data
+
 - Subsetting data (df[1:10,])
 ```{r}
 subset(wage_df[1:10,])
 ```
+
+## Importing & Manipulating Data
 
 - Filtering with logical conditions (subset(df, age > 25))
 ```{r}

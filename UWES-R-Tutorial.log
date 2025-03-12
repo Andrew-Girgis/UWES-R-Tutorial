@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.24)  5 MAR 2025 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.24)  5 MAR 2025 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -753,64 +753,74 @@ Dictionary: translator-theorem-dictionary, Language: English
 [1
 
 {/Users/andrew/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 173.
-(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
-File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 173.
-(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 173.
-(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 173.
-(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 173.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 173.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 173.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 173.
-(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 173.
-(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
+<Discord_qrcode.png, id=21, 501.875pt x 501.875pt>
+File: Discord_qrcode.png Graphic file (type png)
+<use Discord_qrcode.png>
+Package pdftex.def Info: Discord_qrcode.png  used on input line 163.
+(pdftex.def)             Requested size: 269.15523pt x 269.15523pt.
+
+Overfull \vbox (53.42653pt too high) detected at line 163
+ []
+
 
 
 [2
 
-]
+ <./Discord_qrcode.png>]
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 182.
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 182.
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 182.
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 182.
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 222.
+(Font)              <10.95> on input line 182.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 222.
+(Font)              <8> on input line 182.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 222.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 222.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 222.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 222.
+(Font)              <6> on input line 182.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 182.
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 182.
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 182.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 182.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 182.
 
 
 [3
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 231.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 231.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 231.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+
 
 [4
 
@@ -823,22 +833,26 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 [6
 
 ]
-<RStudio_IDE.png, id=57, 1445.4pt x 813.0375pt>
-File: RStudio_IDE.png Graphic file (type png)
-<use RStudio_IDE.png>
-Package pdftex.def Info: RStudio_IDE.png  used on input line 285.
-(pdftex.def)             Requested size: 307.29231pt x 172.85191pt.
-
 
 [7
 
- <./RStudio_IDE.png>]
+]
+<RStudio_IDE.png, id=67, 1445.4pt x 813.0375pt>
+File: RStudio_IDE.png Graphic file (type png)
+<use RStudio_IDE.png>
+Package pdftex.def Info: RStudio_IDE.png  used on input line 294.
+(pdftex.def)             Requested size: 307.29231pt x 172.85191pt.
+
 
 [8
 
-]
+ <./RStudio_IDE.png>]
 
 [9
+
+]
+
+[10
 
 ]
 \openout4 = `UWES-R-Tutorial.vrb'.
@@ -852,28 +866,21 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 23.
 )
 
-[10
+[11
 
 ]
 \openout4 = `UWES-R-Tutorial.vrb'.
 
 (./UWES-R-Tutorial.vrb)
-
-[11
-
-]
-Overfull \hbox (22.41971pt too wide) in paragraph at lines 446--446
- [] 
- []
-
-
 
 [12
 
 ]
-\openout4 = `UWES-R-Tutorial.vrb'.
+Overfull \hbox (22.41971pt too wide) in paragraph at lines 455--455
+ [] 
+ []
 
-(./UWES-R-Tutorial.vrb)
+
 
 [13
 
@@ -897,6 +904,13 @@ Overfull \hbox (22.41971pt too wide) in paragraph at lines 446--446
 (./UWES-R-Tutorial.vrb)
 
 [16
+
+]
+\openout4 = `UWES-R-Tutorial.vrb'.
+
+(./UWES-R-Tutorial.vrb)
+
+[17
 
 ]
 \openout4 = `UWES-R-Tutorial.vrb'.
@@ -926,155 +940,79 @@ Overfull \hbox (66.3778pt too wide) in paragraph at lines 22--22
 []\T1/lmtt/m/n/10.95 ## # i 3 more variables: sector <chr>, union <chr>, married <chr>[] 
  []
 
-
-Overfull \hbox (146.86008pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##     ...1  wage education experience   age ethnicity region gender occupation[] 
- []
-
-
-Overfull \hbox (118.11641pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##    <dbl> <dbl>     <dbl>      <dbl> <dbl> <chr>     <chr>  <chr>  <chr>[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  1     1  5.1          8         21    35 hispanic  other  female worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  2  1100  4.95         9         42    57 cauc      other  female worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  3     2  6.67        12          1    19 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  4     3  4           12          4    22 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  5     4  7.5         12         17    35 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  6     5 13.1         13          9    28 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  7     6  4.45        10         27    43 cauc      south  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  8     7 19.5         12          9    27 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ##  9     8 13.3         16         11    33 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ## 10     9  8.75        12          9    27 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (66.3778pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 ## # i 3 more variables: sector <chr>, union <chr>, married <chr>[] 
- []
-
-
-Overfull \hbox (146.86008pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##     ...1  wage education experience   age ethnicity region gender occupation[] 
- []
-
-
-Overfull \hbox (118.11641pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##    <dbl> <dbl>     <dbl>      <dbl> <dbl> <chr>     <chr>  <chr>  <chr>[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  1     1  5.1          8         21    35 hispanic  other  female worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  2  1100  4.95         9         42    57 cauc      other  female worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  3     4  7.5         12         17    35 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  4     5 13.1         13          9    28 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  5     6  4.45        10         27    43 cauc      south  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  6     7 19.5         12          9    27 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  7     8 13.3         16         11    33 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  8     9  8.75        12          9    27 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ##  9    10 11.4         12         17    35 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (123.86514pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ## 10    11 11.5         12         19    37 cauc      other  male   worker[] 
- []
-
-
-Overfull \hbox (66.3778pt too wide) in paragraph at lines 81--81
-[]\T1/lmtt/m/n/10.95 ## # i 3 more variables: sector <chr>, union <chr>, married <chr>[] 
- []
-
 )
-Overfull \vbox (376.96187pt too high) detected at line 678
- []
-
-
-
-[17
-
-]
-\openout4 = `UWES-R-Tutorial.vrb'.
-
-(./UWES-R-Tutorial.vrb)
 
 [18
 
 ]
 \openout4 = `UWES-R-Tutorial.vrb'.
 
-(./UWES-R-Tutorial.vrb)
+(./UWES-R-Tutorial.vrb
+Overfull \hbox (146.86008pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##     ...1  wage education experience   age ethnicity region gender occupation[] 
+ []
+
+
+Overfull \hbox (118.11641pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##    <dbl> <dbl>     <dbl>      <dbl> <dbl> <chr>     <chr>  <chr>  <chr>[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  1     1  5.1          8         21    35 hispanic  other  female worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  2  1100  4.95         9         42    57 cauc      other  female worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  3     2  6.67        12          1    19 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  4     3  4           12          4    22 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  5     4  7.5         12         17    35 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  6     5 13.1         13          9    28 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  7     6  4.45        10         27    43 cauc      south  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  8     7 19.5         12          9    27 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ##  9     8 13.3         16         11    33 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ## 10     9  8.75        12          9    27 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (66.3778pt too wide) in paragraph at lines 30--30
+[]\T1/lmtt/m/n/10.95 ## # i 3 more variables: sector <chr>, union <chr>, married <chr>[] 
+ []
+
+)
 
 [19
 
@@ -1082,74 +1020,149 @@ Overfull \vbox (376.96187pt too high) detected at line 678
 \openout4 = `UWES-R-Tutorial.vrb'.
 
 (./UWES-R-Tutorial.vrb
-<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-24-1.pdf, id=146, 671.50874pt x 465.74pt>
+Overfull \hbox (146.86008pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##     ...1  wage education experience   age ethnicity region gender occupation[] 
+ []
+
+
+Overfull \hbox (118.11641pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##    <dbl> <dbl>     <dbl>      <dbl> <dbl> <chr>     <chr>  <chr>  <chr>[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  1     1  5.1          8         21    35 hispanic  other  female worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  2  1100  4.95         9         42    57 cauc      other  female worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  3     4  7.5         12         17    35 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  4     5 13.1         13          9    28 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  5     6  4.45        10         27    43 cauc      south  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  6     7 19.5         12          9    27 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  7     8 13.3         16         11    33 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  8     9  8.75        12          9    27 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ##  9    10 11.4         12         17    35 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (123.86514pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ## 10    11 11.5         12         19    37 cauc      other  male   worker[] 
+ []
+
+
+Overfull \hbox (66.3778pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10.95 ## # i 3 more variables: sector <chr>, union <chr>, married <chr>[] 
+ []
+
+)
+Overfull \vbox (3.28658pt too high) detected at line 693
+ []
+
+
+
+[20
+
+]
+\openout4 = `UWES-R-Tutorial.vrb'.
+
+(./UWES-R-Tutorial.vrb)
+
+[21
+
+]
+\openout4 = `UWES-R-Tutorial.vrb'.
+
+(./UWES-R-Tutorial.vrb)
+
+[22
+
+]
+\openout4 = `UWES-R-Tutorial.vrb'.
+
+(./UWES-R-Tutorial.vrb
+<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-24-1.pdf, id=166, 671.50874pt x 465.74pt>
 File: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-24-1.pdf Graphic file (type pdf)
 <use UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-24-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-24-1.pdf  used on input line 23.
 (pdftex.def)             Requested size: 215.10236pt x 149.18907pt.
 )
 
-[20
+[23
 
  <./UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-24-1.pdf>]
 \openout4 = `UWES-R-Tutorial.vrb'.
 
 (./UWES-R-Tutorial.vrb
-<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-25-1.pdf, id=161, 689.57625pt x 465.74pt>
+<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-25-1.pdf, id=181, 689.57625pt x 465.74pt>
 File: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-25-1.pdf Graphic file (type pdf)
 <use UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-25-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-25-1.pdf  used on input line 25.
 (pdftex.def)             Requested size: 215.10272pt x 145.28044pt.
 )
-Overfull \vbox (12.78934pt too high) detected at line 810
+Overfull \vbox (12.78934pt too high) detected at line 825
  []
 
 
 
-[21
+[24
 
  <./UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-25-1.pdf>]
 \openout4 = `UWES-R-Tutorial.vrb'.
 
 (./UWES-R-Tutorial.vrb
-<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-26-1.pdf, id=177, 689.57625pt x 465.74pt>
+<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-26-1.pdf, id=197, 689.57625pt x 465.74pt>
 File: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-26-1.pdf Graphic file (type pdf)
 <use UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-26-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-26-1.pdf  used on input line 15.
 (pdftex.def)             Requested size: 215.10272pt x 145.28044pt.
 )
 
-[22
+[25
 
  <./UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-26-1.pdf>]
 \openout4 = `UWES-R-Tutorial.vrb'.
 
 (./UWES-R-Tutorial.vrb
-<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.pdf, id=192, 665.48625pt x 465.74pt>
+<UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.pdf, id=213, 665.48625pt x 465.74pt>
 File: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.pdf Graphic file (type pdf)
 <use UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.pdf  used on input line 13.
 (pdftex.def)             Requested size: 215.09239pt x 150.53223pt.
 )
 
-[23
-
- <./UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.pdf>]
-
-[24
-
-]
-
-[25
-
-]
-
 [26
 
-]
-\openout4 = `UWES-R-Tutorial.vrb'.
-
-(./UWES-R-Tutorial.vrb)
+ <./UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.pdf>]
 
 [27
 
@@ -1160,6 +1173,21 @@ Package pdftex.def Info: UWES-R-Tutorial_files/figure-beamer/unnamed-chunk-27-1.
 ]
 
 [29
+
+]
+\openout4 = `UWES-R-Tutorial.vrb'.
+
+(./UWES-R-Tutorial.vrb)
+
+[30
+
+]
+
+[31
+
+]
+
+[32
 
 ]
 \tf@nav=\write6
@@ -1178,18 +1206,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 22834 strings out of 475172
- 439600 string characters out of 5765189
- 833277 words of memory out of 5000000
- 45229 multiletter control sequences out of 15000+600000
+ 22863 strings out of 475172
+ 440111 string characters out of 5765189
+ 811398 words of memory out of 5000000
+ 45245 multiletter control sequences out of 15000+600000
  628706 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,11n,107p,520b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on UWES-R-Tutorial.pdf (29 pages, 425720 bytes).
+Output written on UWES-R-Tutorial.pdf (32 pages, 432458 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 91 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
