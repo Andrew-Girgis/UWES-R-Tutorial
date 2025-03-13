@@ -1,5 +1,5 @@
 ---
-title: 'UWES R Workshop: Econometrics in R'
+title: 'UWES R Workshop: Applied Econometrics in R'
 short-title: "R Workshop"
 author: "Andrew Girgis"
 date: 'March 12, 2025'
@@ -73,10 +73,6 @@ library(GGally)
 library(stargazer)
 ```
 
-\note{
-readr: for reading files
-}
-
 ## Step 1: Define - Find - **Gather**
 
 **Import data**
@@ -89,7 +85,7 @@ To import data we use the function read_csv() from the readr library.
 ```
 
 ```{r, message=FALSE, echo=FALSE, tidy=TRUE}
-data_path = '/Users/andrew/Downloads/student+performance/student/student-mat.csv'
+data_path = 'student_data/student-mat.csv'
 student_df = read_csv(data_path)
 ```
 
@@ -218,11 +214,12 @@ ggplot(filtered_df, aes(x = factor(sex), fill = factor(sex))) +
 ## Step 3: **Analyze** - Model
 
 ```{r, echo=FALSE,  fig.width=6, fig.height=4}
-ggplot(filtered_df, aes(x = age)) +
-  geom_bar(fill = "red", color = "black") +
-  labs(title = "Histogram of Age",
+ggplot(filtered_df, aes(x = age, y = after_stat(density))) +
+  geom_histogram(fill = "lightblue", color = "black", bins = 8) +
+  geom_density(color="red") +
+  labs(title = "Histogram of Age with density curve",
        x = "Age",
-       y = "Frequency")
+       y = "Density")
 ```
 
 ## Step 3: **Analyze** - Model
@@ -230,7 +227,7 @@ ggplot(filtered_df, aes(x = age)) +
 ```{r, echo=FALSE, fig.width=6, fig.height=4}
 ggplot(filtered_df, aes(x = factor(higher), fill = factor(higher))) +
   geom_bar(stat = "count") +
-  scale_fill_manual(values = c("orangered", "palegreen2"), labels = c("No", "Yes")) +
+  scale_fill_manual(values = c("#DDA0DD", "palegreen2"), labels = c("No", "Yes")) +
   coord_flip() +
   labs(title = "Horizontal Bar Plot of students who want to pursue higher education",
        x = "Higher Education",
@@ -255,7 +252,7 @@ ggplot(filtered_df, aes(x = sex, y = G3, fill = sex)) +
 ```{r, echo=FALSE, fig.width=6, fig.height=4}
 ggplot(filtered_df, aes(x = higher, y = G3, fill = higher)) +
   geom_boxplot() +
-  scale_fill_manual(values = c("orangered", "palegreen2")) +  # Custom fill colors for the boxes
+  scale_fill_manual(values = c("#DDA0DD", "palegreen2")) +  # Custom fill colors for the boxes
   labs(title = "Boxplot of G3 by Higher Education Aspiration",
        x = "Higher Education Aspiration",
        y = "G3")
@@ -266,7 +263,7 @@ ggplot(filtered_df, aes(x = higher, y = G3, fill = higher)) +
 ```{r, echo=FALSE, fig.width=6, fig.height=4}
 ggplot(filtered_df, aes(x = schoolsup, y = G3, fill = schoolsup)) +
   geom_boxplot() +
-  scale_fill_manual(values = c("orangered", "palegreen2")) +  # Custom fill colors for the boxes
+  scale_fill_manual(values = c("#DDA0DD", "palegreen2")) +  # Custom fill colors for the boxes
   labs(title = "Boxplot of G3 vs wheter a student is getting extra help",
        x = "Parental Status",
        y = "G3")
@@ -301,7 +298,7 @@ Its a bit tough to see whats really going on here. How can we see the real relat
 
 Introducing jitter!
 
-```{r, echo=FALSE, fig.width=6, fig.height=4}
+```{r, echo=FALSE, warning = FALSE, fig.width=6, fig.height=3.5}
 ggplot(filtered_df, aes(x = studytime, y = G3)) +
   geom_point(position = position_jitter(width = 0.1, height = 0), alpha = 0.5) +
   labs(title = "Scatter Plot of Study Time vs. Final Grade",
@@ -311,7 +308,7 @@ ggplot(filtered_df, aes(x = studytime, y = G3)) +
 
 ## Step 3: **Analyze** - Model
 
-```{r, echo=FALSE, fig.width=6, fig.height=4}
+```{r, echo=FALSE, warning = FALSE, fig.width=6, fig.height=4}
 ggplot(filtered_df, aes(x = G3, y = absences)) +
   geom_point(position = position_jitter(width = 0.2, height = 0.2), alpha = 0.5) +  # Add jitter with alpha blending
   labs(title = "Scatter Plot of Final Grade vs. Absences",
@@ -323,7 +320,7 @@ ggplot(filtered_df, aes(x = G3, y = absences)) +
 
 ## Step 3: **Analyze** - Model
 
-```{r, message=FALSE, echo=FALSE, fig.width=6, fig.height=4}
+```{r, message=FALSE, warning = FALSE, echo=FALSE, fig.width=6, fig.height=3.5}
 colors <- c("M" = "lightblue", "F" = "lightpink")
 
 pm <- ggpairs(filtered_df, 
@@ -365,6 +362,8 @@ $\beta_{1}$: True beta coefficient that quantifies the exact strength and direct
 
 $\epsilon$: Error term
 
+## Step 3: Analyze - **Model**
+
 **Our Estimated Model:**
 $$ \hat{y}_i = \hat{\beta}_0 + \hat{\beta}_{1}X_{1i} $$
 
@@ -384,6 +383,7 @@ stargazer(simple_model, type = "latex", title = "Simple Regression Results", hea
 \begin{table}[!htbp] 
   \centering 
   \caption{Simple Regression Results - Part 1} 
+  \footnotesize
   \label{} 
   \begin{tabular}{@{\extracolsep{5pt}}lc} 
   \\[-1.8ex]\hline 
@@ -398,17 +398,6 @@ stargazer(simple_model, type = "latex", title = "Simple Regression Results", hea
    Constant & 9.328$^{***}$ \\ 
     & (0.603) \\ 
     & \\ 
-  \hline \\[-1.8ex] 
-  \end{tabular} 
-\end{table} 
-
-## Step 3: Analyze - **Model**
-
-\begin{table}[!htbp] 
-  \centering 
-  \caption{Simple Regression Results - Part 2} 
-  \label{} 
-  \begin{tabular}{@{\extracolsep{5pt}}lc} 
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   R$^{2}$ & 0.010 \\ 
@@ -429,7 +418,7 @@ Visually
 ```{r, echo=FALSE, message=FALSE}
 ggplot(filtered_df, aes(x = studytime, y = G3)) +
   geom_jitter(width = 0.1, height = 0) +  # Add jitter for better visualization
-  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  geom_smooth(method = "lm", se = TRUE, color = "red") +
   labs(title = "Scatterplot of Final Grade vs. Study Time",
        x = "Study Time",
        y = "Final Grade (G3)")
@@ -449,12 +438,65 @@ $\beta_{1-7}$: True beta coefficient that quantifies the exact strength and dire
 
 $\epsilon$: Error term
 
+## Step 3: Analyze - **Model**
+
 **Our Estimated Model:**
 $$ \hat{y}_i = \hat{\beta}_0 + \hat{\beta}_{1}X_{1i} + \hat{\beta}_{2}X_{2i} + \hat{\beta}_{3}X_{3i} + \hat{\beta}_{4}X_{4i} + \hat{\beta}_{5}X_{5i} + \hat{\beta}_{6i}X_{6i} + \hat{\beta}_{7}X_{7i}$$
 
 $\hat{\beta}_0$: Estimated Intercept
 
 $\hat{\beta}_{1-7}$: Estimated coefficient that quantifies the strength and direction of the relationship between each independent variable and the dependent variable.
+
+## Step 3: Analyze - **Model**
+
+This can also be written in matrix notation in a system of equations as follows:
+
+\[
+\mathbf{y} = \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\varepsilon}
+\]
+
+## Step 3: Analyze - **Model**
+
+where:
+
+\[
+\mathbf{y} =
+\begin{bmatrix}
+y_1 \\
+y_2 \\
+\vdots \\
+y_n
+\end{bmatrix}, \quad
+\mathbf{X} =
+\begin{bmatrix}
+1 & X_{11} & X_{12} & X_{13} & X_{14} & X_{15} & X_{16} & X_{17} \\
+1 & X_{21} & X_{22} & X_{23} & X_{24} & X_{25} & X_{26} & X_{27} \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+1 & X_{n1} & X_{n2} & X_{n3} & X_{n4} & X_{n5} & X_{n6} & X_{n7}
+\end{bmatrix}, 
+\]
+
+\[
+\boldsymbol{\beta} =
+\begin{bmatrix}
+\beta_0 \\
+\beta_1 \\
+\beta_2 \\
+\beta_3 \\
+\beta_4 \\
+\beta_5 \\
+\beta_6 \\
+\beta_7
+\end{bmatrix}, \quad
+\boldsymbol{\varepsilon} =
+\begin{bmatrix}
+\varepsilon_1 \\
+\varepsilon_2 \\
+\vdots \\
+\varepsilon_n
+\end{bmatrix}.
+\]
+
 
 ## Step 3: Analyze - **Model**
 
@@ -514,7 +556,8 @@ stargazer(model, type = "latex", title = "Regression Results", header = FALSE, f
 ```
 \begin{table}[!htbp] 
   \centering 
-  \caption{Regression Results - Part 1} 
+  \caption{Regression Results - Part 1}
+  \footnotesize
   \label{} 
   \begin{tabular}{@{\extracolsep{5pt}}lc} 
   \\[-1.8ex]\hline 
@@ -544,6 +587,7 @@ stargazer(model, type = "latex", title = "Regression Results", header = FALSE, f
 \begin{table}[!htbp] 
   \centering 
   \caption{Regression Results - Part 2} 
+  \footnotesize
   \label{} 
   \begin{tabular}{@{\extracolsep{5pt}}lc} 
   \\[-1.8ex]\hline 
@@ -552,7 +596,7 @@ stargazer(model, type = "latex", title = "Regression Results", header = FALSE, f
   \cline{2-2} 
   \\[-1.8ex] & G3 \\ 
   \hline \\[-1.8ex] 
-   schoolsup & $-$1.622$^{**}$ \\ 
+    schoolsup & $-$1.622$^{**}$ \\ 
     & (0.690) \\ 
     & \\ 
    sex & $-$1.436$^{***}$ \\ 
@@ -573,6 +617,7 @@ stargazer(model, type = "latex", title = "Regression Results", header = FALSE, f
 \begin{table}[!htbp] 
   \centering 
   \caption{Regression Results - Part 3} 
+  \footnotesize
   \label{} 
   \begin{tabular}{@{\extracolsep{5pt}}lc} 
   \\[-1.8ex]\hline 

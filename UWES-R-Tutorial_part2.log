@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.24)  12 MAR 2025 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.24)  12 MAR 2025 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,9 +795,6 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
-
-LaTeX Warning: Label `' multiply defined.
-
 )
 \openout1 = `UWES-R-Tutorial_part2.aux'.
 
@@ -920,20 +917,58 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(./UWES-R-Tutorial_part2.nav) [1
+(./UWES-R-Tutorial_part2.nav)
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 190--190
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 191--191
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 200--200
+ [][][][]  
+ []
+
 <Discord_qrcode.png, id=39, 501.875pt x 501.875pt>
 File: Discord_qrcode.png Graphic file (type png)
 <use Discord_qrcode.png>
 Package pdftex.def Info: Discord_qrcode.png  used on input line 200.
 (pdftex.def)             Requested size: 171.21724pt x 171.21724pt.
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
 [2
 
- <./Discord_qrcode.png>] [3
+ <./Discord_qrcode.png>]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 218--218
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[3
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 228--228
+ [][][][]  
+ []
+
 <data-literacy-journey-eng.png, id=60, 539.616pt x 205.2468pt>
 File: data-literacy-journey-eng.png Graphic file (type png)
 <use data-literacy-journey-eng.png>
@@ -987,19 +1022,52 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 228.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 228.
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
 [4
 
- <./data-literacy-journey-eng.png>] [5
+ <./data-literacy-journey-eng.png>]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 237--237
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[5
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 269--269
+ [][][][]  
+ []
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 269.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 269.
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
 [6
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 271--271
+ [][][][]  
+ []
+
 \openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 293--293
+ [][][][]  
+ []
 
 (./UWES-R-Tutorial_part2.vrb
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
@@ -1014,380 +1082,710 @@ File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 14.
-) [7
+)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [8
+[7
 
-]
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 295--295
+ [][][][]  
+ []
+
 \openout4 = `UWES-R-Tutorial_part2.vrb'.
 
-(./UWES-R-Tutorial_part2.vrb) [9
 
-]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
-
-(./UWES-R-Tutorial_part2.vrb) [10
-
-] [11
-
-]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
-
-(./UWES-R-Tutorial_part2.vrb) [12
-
-]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
-
-(./UWES-R-Tutorial_part2.vrb) [13
-
-]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
-
-(./UWES-R-Tutorial_part2.vrb) [14
-
-]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 307--307
+ [][][][]  
+ []
 
 (./UWES-R-Tutorial_part2.vrb)
-Overfull \vbox (3.2894pt too high) detected at line 485
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[8
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 309--309
+ [][][][]  
+ []
+
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 338--338
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[9
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 364--364
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[10
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 366--366
+ [][][][]  
+ []
+
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 400--400
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[11
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 402--402
+ [][][][]  
+ []
+
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 423--423
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 425--425
+ [][][][]  
+ []
+
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 442--442
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 444--444
+ [][][][]  
+ []
+
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 481--481
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \vbox (3.2894pt too high) detected at line 481
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 483--483
+ [][][][]  
+ []
+
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 496--496
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [15
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 498--498
+ [][][][]  
+ []
+
 \openout4 = `UWES-R-Tutorial_part2.vrb'.
 
-(./UWES-R-Tutorial_part2.vrb) [16
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 524--524
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[16
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 526--526
+ [][][][]  
+ []
+
 \openout4 = `UWES-R-Tutorial_part2.vrb'.
 
-(./UWES-R-Tutorial_part2.vrb) [17
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 542--542
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[17
 
 ]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 547--547
+ [][][][]  
+ []
 
-(./UWES-R-Tutorial_part2.vrb) [18
-
-]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-13-1.pdf, id=208, 417.
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-13-1.pdf, id=202, 417.
 56pt x 277.035pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-13-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-13-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-13-1.pdf  used on input line 551.
+k-13-1.pdf  used on input line 547.
 (pdftex.def)             Requested size: 342.45236pt x 227.20398pt.
 
-Overfull \vbox (9.19963pt too high) detected at line 551
+Overfull \vbox (9.19963pt too high) detected at line 547
  []
 
-[19
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[18
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-13-1.pdf>]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-14-1.pdf, id=225, 423.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 552--552
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-14-1.pdf, id=218, 423.
 5825pt x 279.0425pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-14-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-14-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-14-1.pdf  used on input line 556.
+k-14-1.pdf  used on input line 552.
 (pdftex.def)             Requested size: 342.44714pt x 225.59314pt.
 
-Overfull \vbox (7.58879pt too high) detected at line 556
+Overfull \vbox (7.58879pt too high) detected at line 552
  []
 
-[20
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-14-1.pdf>]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-15-1.pdf, id=241, 424.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 557--557
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-15-1.pdf, id=235, 424.
 58624pt x 277.035pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-15-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-15-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-15-1.pdf  used on input line 561.
+k-15-1.pdf  used on input line 557.
 (pdftex.def)             Requested size: 342.44879pt x 223.44176pt.
 
-Overfull \vbox (5.43741pt too high) detected at line 561
+Overfull \vbox (5.43741pt too high) detected at line 557
  []
 
-[21
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[20
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-15-1.pdf>]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-16-1.pdf, id=257, 417.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 562--562
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-16-1.pdf, id=251, 417.
 56pt x 277.035pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-16-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-16-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-16-1.pdf  used on input line 566.
+k-16-1.pdf  used on input line 562.
 (pdftex.def)             Requested size: 342.45236pt x 227.20398pt.
 
-Overfull \vbox (9.19963pt too high) detected at line 566
+Overfull \vbox (9.19963pt too high) detected at line 562
  []
 
-[22
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[21
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-16-1.pdf>]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-17-1.pdf, id=273, 417.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 567--567
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-17-1.pdf, id=267, 417.
 56pt x 279.0425pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-17-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-17-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-17-1.pdf  used on input line 571.
+k-17-1.pdf  used on input line 567.
 (pdftex.def)             Requested size: 342.45236pt x 228.85039pt.
 
-Overfull \vbox (10.84604pt too high) detected at line 571
+Overfull \vbox (10.84604pt too high) detected at line 567
  []
 
-[23
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[22
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-17-1.pdf>]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-18-1.pdf, id=289, 417.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 573--573
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-18-1.pdf, id=283, 417.
 56pt x 277.035pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-18-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-18-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-18-1.pdf  used on input line 577.
+k-18-1.pdf  used on input line 573.
 (pdftex.def)             Requested size: 342.45236pt x 227.20398pt.
 
-Overfull \vbox (24.92877pt too high) detected at line 577
+Overfull \vbox (24.92877pt too high) detected at line 573
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[23
+
+ <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-18-1.pdf>]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 575--575
+ [][][][]  
+ []
+
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
+
+
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 606--606
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [24
 
- <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-18-1.pdf>]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
-
-(./UWES-R-Tutorial_part2.vrb) [25
-
 ]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-20-1.pdf, id=315, 423.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 614--614
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-20-1.pdf, id=308, 423.
 5825pt x 279.0425pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-20-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-20-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-20-1.pdf  used on input line 618.
+k-20-1.pdf  used on input line 614.
 (pdftex.def)             Requested size: 342.44714pt x 225.59314pt.
 
-Overfull \vbox (43.71794pt too high) detected at line 618
+Overfull \vbox (43.71794pt too high) detected at line 614
  []
 
-[26
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[25
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-20-1.pdf>]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-21-1.pdf, id=332, 423.
-5825pt x 279.0425pt>
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 621--621
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-21-1.pdf, id=326, 423.
+5825pt x 242.9075pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-21-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-21-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-21-1.pdf  used on input line 625.
-(pdftex.def)             Requested size: 342.44714pt x 225.59314pt.
+k-21-1.pdf  used on input line 621.
+(pdftex.def)             Requested size: 342.44714pt x 196.37962pt.
 
-Overfull \vbox (30.11794pt too high) detected at line 625
+Overfull \vbox (0.90442pt too high) detected at line 621
  []
 
-[27
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[26
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-21-1.pdf>]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-22-1.pdf, id=352, 423.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 626--626
+ [][][][]  
+ []
+
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-22-1.pdf, id=346, 423.
 5825pt x 277.035pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-22-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-22-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-22-1.pdf  used on input line 630.
+k-22-1.pdf  used on input line 626.
 (pdftex.def)             Requested size: 342.44714pt x 223.97017pt.
 
-Overfull \vbox (5.96582pt too high) detected at line 630
+Overfull \vbox (5.96582pt too high) detected at line 626
  []
 
-[28
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[27
 
  <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-22-1.pdf>]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
-
-(./UWES-R-Tutorial_part2.vrb
-Overfull \hbox (151.95576pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## Warning: No shared levels found between \TS1/lmtt/m/n/1
-0.95 `\T1/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 
-of the manual scale and the[] 
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 631--631
+ [][][][]  
  []
 
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-
-Overfull \hbox (100.21716pt too wide) in paragraph at lines 24--24
-[]\T1/lmtt/m/n/10.95 ## No shared levels found between \TS1/lmtt/m/n/10.95 `\T1
-/lmtt/m/n/10.95 names(values)\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 of the ma
-nual scale and the[] 
- []
-
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-23-1.pdf, id=373, 423.
-5825pt x 277.035pt>
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-23-1.pdf, id=366, 423.
+5825pt x 240.9pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-23-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-23-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-23-1.pdf  used on input line 26.
-(pdftex.def)             Requested size: 342.44714pt x 223.97017pt.
-)
-Overfull \vbox (284.76595pt too high) detected at line 658
+k-23-1.pdf  used on input line 631.
+(pdftex.def)             Requested size: 342.44714pt x 194.75665pt.
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[28
+
+ <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-23-1.pdf>]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 656--656
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [29
 
- <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-23-1.pdf>] [30
-
 ]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 708.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 672--672
+ [][][][]  
+ []
 
-Overfull \vbox (21.02489pt too high) detected at line 708
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 672.
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[30
+
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/loca
+l/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 684--684
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [31
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/loca
-l/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 717--717
+ [][][][]  
+ []
 
-Package hyperref Warning: Ignoring empty anchor on input line 732.
+
+Package hyperref Warning: Ignoring empty anchor on input line 717.
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 717.
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
 
 [32
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 724--724
+ [][][][]  
+ []
 
-Package hyperref Warning: Ignoring empty anchor on input line 752.
-
-[33
-
-]
-<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-25-1.pdf, id=432, 712.
+<UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-25-1.pdf, id=427, 712.
 6625pt x 495.8525pt>
 File: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-25-1.pdf Graphic 
 file (type pdf)
 <use UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-25-1.pdf>
 Package pdftex.def Info: UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chun
-k-25-1.pdf  used on input line 759.
+k-25-1.pdf  used on input line 724.
 (pdftex.def)             Requested size: 342.43297pt x 238.25618pt.
 
-Overfull \vbox (42.78098pt too high) detected at line 759
+Overfull \vbox (42.78098pt too high) detected at line 724
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[33
+
+ <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-25-1.pdf>]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 740--740
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [34
 
- <./UWES-R-Tutorial_part2_files/figure-beamer/unnamed-chunk-25-1.pdf>]
-Overfull \vbox (27.52489pt too high) detected at line 784
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 752--752
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [35
 
-] [36
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 762--762
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[36
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 805--805
+ [][][][]  
+ []
+
+
+Overfull \vbox (7.09618pt too high) detected at line 805
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[37
+
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 815--815
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[38
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 817--817
+ [][][][]  
+ []
+
 \openout4 = `UWES-R-Tutorial_part2.vrb'.
 
-(./UWES-R-Tutorial_part2.vrb) [37
 
-]
-\openout4 = `UWES-R-Tutorial_part2.vrb'.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 837--837
+ [][][][]  
+ []
 
-(./UWES-R-Tutorial_part2.vrb) [38
-
-]
-
-Package hyperref Warning: Ignoring empty anchor on input line 867.
-
-
-Overfull \vbox (29.33931pt too high) detected at line 867
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [39
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 839--839
+ [][][][]  
+ []
 
-Package hyperref Warning: Ignoring empty anchor on input line 897.
+\openout4 = `UWES-R-Tutorial_part2.vrb'.
 
 
-Overfull \vbox (29.33931pt too high) detected at line 897
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 858--858
+ [][][][]  
+ []
+
+(./UWES-R-Tutorial_part2.vrb)
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [40
 
 ]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 889--889
+ [][][][]  
+ []
 
-Package hyperref Warning: Ignoring empty anchor on input line 922.
+
+Package hyperref Warning: Ignoring empty anchor on input line 889.
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
 
 [41
 
 ]
-<mastershifu.jpeg, id=509, 1284.8pt x 722.7pt>
-File: mastershifu.jpeg Graphic file (type jpg)
-<use mastershifu.jpeg>
-Package pdftex.def Info: mastershifu.jpeg  used on input line 931.
-(pdftex.def)             Requested size: 239.70354pt x 134.83324pt.
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 920--920
+ [][][][]  
+ []
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 920.
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
 [42
 
- <./mastershifu.jpeg>] [43
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 946--946
+ [][][][]  
+ []
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 946.
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 955--955
+ [][][][]  
+ []
+
+<mastershifu.jpeg, id=536, 1284.8pt x 722.7pt>
+File: mastershifu.jpeg Graphic file (type jpg)
+<use mastershifu.jpeg>
+Package pdftex.def Info: mastershifu.jpeg  used on input line 955.
+(pdftex.def)             Requested size: 239.70354pt x 134.83324pt.
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[44
+
+ <./mastershifu.jpeg>]
+Overfull \hbox (6.51447pt too wide) in paragraph at lines 972--972
+ [][][][]  
+ []
+
+
+Overfull \hbox (6.51447pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[45
 
 ]
 \tf@nav=\write6
@@ -1409,31 +1807,37 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25752 strings out of 474116
- 500747 string characters out of 5743682
- 1943187 words of memory out of 5000000
- 47305 multiletter control sequences out of 15000+600000
- 627198 words of font info for 139 fonts, out of 8000000 for 9000
+ 25764 strings out of 474116
+ 500192 string characters out of 5743682
+ 1946187 words of memory out of 5000000
+ 47282 multiletter control sequences out of 15000+600000
+ 644563 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,1018b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive
-/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf
--dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/
-type1/public/lm/lmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/publ
-ic/lm/lmss12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss
-8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/20
-24/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-d
-ist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
-ype1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/publi
-c/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti
-10.pfb>
-Output written on UWES-R-Tutorial_part2.pdf (43 pages, 761315 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/tex
+mf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fon
+ts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/pu
+blic/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/l
+mr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2024/
+texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2024/texmf-dist
+/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
+1/public/lm/lmss9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm
+/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso10
+.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2024/texmf-dist/fo
+nts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
+public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/
+lmtti10.pfb>
+Output written on UWES-R-Tutorial_part2.pdf (45 pages, 838349 bytes).
 PDF statistics:
- 633 PDF objects out of 1000 (max. 8388607)
- 442 compressed objects within 5 object streams
- 131 named destinations out of 1000 (max. 500000)
- 39073 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 687 PDF objects out of 1000 (max. 8388607)
+ 479 compressed objects within 5 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 49313 words of extra memory for PDF output out of 51595 (max. 10000000)
 
